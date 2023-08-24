@@ -2,7 +2,7 @@
 // 這個在第六行裡也有，但是因為客製化的變數需要，所以要多放一行
 @import './utils/variables';
 // 上面是自己客製化寫的，先搶先贏，要放前面才能覆蓋掉default
-// 第六行等同於把所有的BS5的 SCSS 突通載入進來
+// 第六行等同於把所有的BS5的 SCSS 通載入進來
 @import "../../node_modules/bootstrap";
 
 // 自己寫的 scss
@@ -10,4 +10,5 @@
 @import './layout/footer.scss';
 @import './pages/index.scss';
 @import './utils/font.scss';
-
+@import './pages/login.scss';
+@import './layout/swiper.scss';

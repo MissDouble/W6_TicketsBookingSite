@@ -15,7 +15,7 @@
 
 <div class="container">
   <div class="cover text-light d-flex flex-column justify-content-between mb-11">
-    <p class="fs-2 line-height-md title ps-11 pt-11">19 MAY 2023</p>
+    <p class="fs-2 lh-1 title ps-11 pt-11">19 MAY 2023</p>
     <div>
       <p class="fs-5 noto-tc-serif text-center mb-3">隔牆有耳-沒有草東的派對</p>
       <p class="col-lg-8 ms-auto me-auto text-center mb-7">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
@@ -144,7 +144,7 @@
     <p class="fs-1">ONLINE</p>
     <p class="fs-4 noto-tc-serif">線上活動</p>
   </div>
-  <div class="chatgpt row">
+  <div class="chatgpt row mb-12">
     <div class="col-7"><img class="chatgpt-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true" alt=""></div>
     <div class="col-5">
       <p class="mb-5 fs-4 fw-bold noto-tc-serif">切特居批踢</p>
@@ -157,7 +157,8 @@
       <button class="btn btn-primary w-100">查看活動詳情<i class="icofont-rounded-double-right"></i></button>
     </div>
   </div>
-  <div class="album">
+  <%- include('./layout/swiper'); -%>
+  <div class="album mb-12">
     <ul class="row list-unstyled mt-12">
       <li class="col">
         <div class="item border border-2 border-dark p-3 pb-5 position-relative">
@@ -189,6 +190,7 @@
       </li>
     </ul>
   </div>
+  <%- include('./layout/swiper'); -%>
   <div class="contact row g-0 mt-12 mb-12">
     <div class="col-6">
       <div class="border border-2 border-primary border-bottom-0 border-end-0">
@@ -198,10 +200,10 @@
         <p class="mb-8">想第一時間獲得新奇有趣的活動資訊？<br>
         追蹤我們的社群吧！<br>
         也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
-        <ul class="list-unstyled">
-          <li class="mb-5"><i class="icofont-ui-email bg-primary body-color p-2 me-5"></i><a href="mailto:7tao.event@gmail.com" >7tao.event@gmail.com</a></li>
-          <li class="mb-5"><i class="icofont-phone bg-primary body-color p-2 me-5"></i><a href="tel:09123123123">09123123123</a></li>
-          <li><i class="icofont-facebook bg-primary body-color p-2 me-5"></i><a href="#">7TAO七逃</a></li>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-5 d-flex align-items-center"><i class="icofont-ui-email bg-primary body-color p-2 me-5"></i><a href="mailto:7tao.event@gmail.com" >7tao.event@gmail.com</a></li>
+          <li class="mb-5 d-flex align-items-center"><i class="icofont-phone bg-primary body-color p-2 me-5"></i><a href="tel:09123123123">09123123123</a></li>
+          <li class="d-flex align-items-center"><i class="icofont-facebook bg-primary body-color p-2 me-5"></i><a href="#">7TAO七逃</a></li>
         </ul>
       </div>
     </div>
@@ -213,9 +215,9 @@
         <p class="mb-8">訂閱電子報送折價券！<br>
           定期精選文章資訊及最新優惠資訊，<br>
           還不通通給我訂閱起來？
-        <input class="d-block py-5 px-7 mt-8 bg-body w-100 noto-tc-sans mb-7" type="email" name="" id="" placeholder="輸入Email">
+        <input class="form-control border border-primary bprderd-2 block py-5 px-7 mt-8 bg-body w-100 noto-tc-sans" type="email" name="" id="" placeholder="輸入Email">
       </div>
-      <button class="btn btn-primary w-100">確認訂閱<i class="icofont-rounded-double-right"></i></button>
+      <button class="btn btn-primary w-100 fs-6 py-2">確認訂閱<i class="icofont-rounded-double-right"></i></button>
     </div>
   <!-- <div class="contact d-flex">
     <div class="w-50">
@@ -316,5 +318,6 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>

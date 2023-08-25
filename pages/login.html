@@ -16,14 +16,20 @@
         <div class="col-4 mx-auto mb-175 fs-6 mt-12">
             <img class="login-sparkler mx-auto d-block" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler icon">
             <p class="fs-5 my-5 text-center">會員登入</p>
-            <form class="" action="">
-                <div class="account mb-5">
-                    <label class="form-label fs-8" for="">帳號</label>
-                    <input class="form-control fs-6 fieldtext-878787 border border-2 border-primary bg-body" type="text" placeholder="請輸入帳號">
+            <form class="needs-validation" action="" novalidate>
+                <div class="username mb-5">
+                    <label class="form-label fs-8" for="username">帳號</label>
+                    <input class="form-control fs-6 fieldtext-878787 border border-2 border-primary bg-body" id="username" type="text" placeholder="請輸入帳號" required>
+                    <div class="invalid-feedback">
+                        請輸入帳號
+                    </div>
                 </div>
                 <div class="password mb-8">
-                    <label class="form-label fs-8" for="">密碼</label>
-                    <input class="form-control fs-6 fieldtext-878787 border border-2 border-primary bg-body" type="password" placeholder="請輸入密碼">
+                    <label class="form-label fs-8" for="password">密碼</label>
+                    <input class="form-control fs-6 fieldtext-878787 border border-2 border-primary bg-body" id="password" type="password" placeholder="請輸入密碼" required>
+                    <div class="invalid-feedback">
+                        請輸入密碼
+                    </div>
                 </div>
                 <button class="btn btn-primary w-100 py-2 " type="summit">登入<i class="icofont-rounded-double-right"></i></button>
             </form>
@@ -32,5 +38,14 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+    $('.needs-validation').each(function(index) {
+        $(this).on('submit', function(e) {
+          e.preventDefault();
+          $(this).addClass('was-validated');
+        });
+      });
+    </script>
   </body>
 </html>

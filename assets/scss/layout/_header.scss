@@ -8,10 +8,49 @@ a:hover{
 .search-bar{
   width: 335px;
   // height: 55px;
+  @media(max-width:992px) {
+    width: 207px;
+  }
 }
 .search-icon {
   width: 55px;
   height: 55px;
 }
+.collapsed-menu{
+  display: none;
+}
+.collapse-menu-items{
+  top: 106px;
+}
+
+@media(max-width:768px) {
+  .opened-menu{
+    display: none;
+  }
+  .collapsed-menu{
+    display: block;
+  }
+  .md-display-none{
+    display: none;
+  }
+}
+
+@media(max-width:992px) {
+
+  .lg-mx-25{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+@media(max-width:992px){
+  .sm-display-none{
+    display: none;
+  }
+}
+
+
+
+
+
 
 

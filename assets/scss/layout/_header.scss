@@ -6,10 +6,10 @@ a:hover{
   color: #9C9E18;
 }
 .search-bar{
-  width: 335px;
+  width: 207px;
   // height: 55px;
-  @media(max-width:992px) {
-    width: 207px;
+  @media(min-width:992px) {
+    width: 335px;
   }
 }
 .search-icon {
@@ -22,6 +22,7 @@ a:hover{
 .collapse-menu-items{
   top: 106px;
 }
+
 
 @media(max-width:768px) {
   .opened-menu{

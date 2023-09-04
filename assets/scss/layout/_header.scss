@@ -1,37 +1,66 @@
 .logo{
+  width: 40px;
+  height: 40px;
+  @media(min-width:576px) {
   width: 53px;
   height: 53px;
+}
 }
 a:hover{
   color: #9C9E18;
 }
 .search-bar{
   width: 207px;
-  // height: 55px;
-  @media(min-width:992px) {
+  @media(min-width:576px) {
     width: 335px;
   }
 }
+.search-line-height{
+  line-height: 1.25;
+  @media(min-width:576px) {
+  line-height: 1.5;
+  }
+
+}
 .search-icon {
-  width: 55px;
-  height: 55px;
+    width: 40px;
+    height: 40px;
+  @media(min-width:576px) {
+    width: 55px;
+    height: 55px;
+  }
 }
 .collapsed-menu{
   display: none;
 }
 .collapse-menu-items{
-  top: 106px;
+  top: 66px;
+  display: block;
+  @media(min-width:576px) {
+    top: 106px;
+  }
+  @media(min-width:992px) {
+      display: none;
+    }
+}
+.hamburger{
+  width: 30px;
+  height: 30px;
+}
+.opened-menu{
+  display: none;
+}
+.collapsed-menu{
+  display: block;
 }
 
-
-@media(max-width:768px) {
+@media(min-width:992px) {
   .opened-menu{
-    display: none;
-  }
-  .collapsed-menu{
     display: block;
   }
-
+  .collapsed-menu{
+    display: none;
+  }
 }
 
 @media(max-width:992px) {
@@ -41,7 +70,7 @@ a:hover{
     margin-right: 25px;
   }
 }
-@media(max-width:375px){
+@media(min-width:375px){
 
 }
 

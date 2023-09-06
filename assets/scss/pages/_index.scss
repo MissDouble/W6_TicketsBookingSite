@@ -36,7 +36,8 @@
   object-fit: cover;
   object-position: 0px 33%;
   @media(min-width:576px) {
-    height: 317px;
+    max-height: 410px;
+    height:100%;
   }
 }
 
@@ -47,6 +48,11 @@
 .p-transform{
   transform:translate(-50%,-50%) rotate(-4deg);
 }
+.album {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .album li{
   &:nth-child(2n){
     transform:rotate(2deg);

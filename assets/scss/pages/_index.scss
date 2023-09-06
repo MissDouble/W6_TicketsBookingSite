@@ -12,25 +12,58 @@ text-decoration: underline;
     height: 255px;
   }
 }
-.hover-pseudo {
+// .hover-pseudo {
+//   position:relative;
+//   z-index:5;
+// }
+// .hover-pseudo::before{
+//   content:"";
+//   position:absolute;
+//   background-color: $secondary !important;
+//   top: 0;
+//   left: 0;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   opacity:0;
+//   z-index: 1;
+// }
+// .hover-pseudo:hover::before {
+//   opacity: 1;
+// }
+.hover-pseudo{
+  width: 76px;
+  height: 29px;
+  border-radius: 50%;
+  background: $secondary;
   position:relative;
-  z-index:5;
+  z-index:100;
 }
 .hover-pseudo::before{
-  content:"";
   position:absolute;
-  background-color: $secondary !important;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  content:"";
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
+  background-color: green;
+  top:0;
+  left:0;
   opacity:0;
-  z-index: 1;
+  z-index:2
 }
-.hover-pseudo:hover::before {
-  opacity: 1;
+.hover-pseudo:hover::before{
+  position:absolute;
+  content:"";
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: yellow;
+  top:0;
+  left:0;
+  opacity:0.5;
+  z-index:2;
 }
+
 .index-title {
   font-size: 100px;
 }

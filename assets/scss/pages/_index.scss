@@ -1,7 +1,36 @@
+.card-footer a:hover{
+text-decoration: underline;
+}
+
 .catagory a:hover {
   color: $primary;
 }
-
+.card>img{
+  height: 210px;
+  object-fit: cover;
+  @media(min-width:768px) {
+    height: 255px;
+  }
+}
+.hover-pseudo {
+  position:relative;
+  z-index:5;
+}
+.hover-pseudo::before{
+  content:"";
+  position:absolute;
+  background-color: $secondary !important;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity:0;
+  z-index: 1;
+}
+.hover-pseudo:hover::before {
+  opacity: 1;
+}
 .index-title {
   font-size: 100px;
 }

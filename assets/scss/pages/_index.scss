@@ -1,5 +1,6 @@
 .card-footer a:hover{
 text-decoration: underline;
+cursor:pointer;
 }
 
 .catagory a:hover {
@@ -37,7 +38,6 @@ text-decoration: underline;
   border-radius: 50%;
   background: $secondary;
   position:relative;
-  z-index:100;
 }
 .hover-pseudo::before{
   position:absolute;
@@ -45,23 +45,14 @@ text-decoration: underline;
   width: 29px;
   height: 29px;
   border-radius: 50%;
-  background-color: green;
+  background-color: $secondary;
   top:0;
   left:0;
   opacity:0;
-  z-index:2
+  z-index:-1
 }
 .hover-pseudo:hover::before{
-  position:absolute;
-  content:"";
-  width: 29px;
-  height: 29px;
-  border-radius: 50%;
-  background-color: yellow;
-  top:0;
-  left:0;
-  opacity:0.5;
-  z-index:2;
+  opacity:1;
 }
 
 .index-title {
@@ -167,11 +158,11 @@ text-decoration: underline;
 //   width: 0.5em;
 // }
 
-@media(min-width:576px) {
-  .md-fs-5 {
-    font-size: 24px !important;
-  }
-}
+// @media(min-width:576px) {
+//   .md-fs-5 {
+//     font-size: 24px !important;
+//   }
+// }
 @media(min-width:768px) {
   .md-border-end-0{
     border-right: 0 !important;

@@ -1,11 +1,10 @@
+.match-page-height{
+  height: calc(100vh - 229px) !important;
+  padding-top: 28px;
+}
+
 .login-sparkler {
     width: 31px;
-}
-.login-mb{
-    margin-bottom: 264px;
-    @media(min-width:768px) {
-      margin-bottom: 175px;      
-    }
 }
 
 .fieldtext-878787{

@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap" rel="stylesheet"> -->
+    <!-- 版本一：從 google font 網站選擇 Noto Sans TC 400 + Noto Serif TC 700 + Yeseva One 400 的寫法 依照助教的說法Thin是預設值，我明明是選擇regular 400引入 沒有選擇100 Thin呀？-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap" rel="stylesheet"> -->
+    <!-- 版本二：從 google font 網站選擇 Noto Sans TC 100 & 400 + Noto Serif TC 700 + Yeseva One 400 的寫法 同時載入100 400 「開賣中」仍然會套用到Thin 為什麼呢？-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC@400&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap" rel="stylesheet"> -->
+    <!-- 版本三：誤打誤撞發現在字體後面直接@400的寫法 才有辦法讓Noto Sans TC脫離Thin的掌控 但這個寫法不是出現在google font網站上面提供的引入連結寫法，但這樣寫卻會讓後面的字體引入失效？ -->
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+    <!-- 版本四：為了不讓字體互相影響，把三個字體分開引用，才在不影響其他字體的同時成功將「開賣中」套用成跟設計稿一樣的粗體字，分三行感覺應該沒有必要，想請問正確到底該如何引用呢？-->
     <title>index</title>
-    <script type="module" crossorigin src="/W6_TicketsBookingSite/assets/main-1e34ad65.js"></script>
-    <link rel="stylesheet" href="/W6_TicketsBookingSite/assets/main-d2958ae4.css">
+    
+    <script type="module" crossorigin src="/W6_TicketsBookingSite/assets/main-930a4103.js"></script>
+    <link rel="stylesheet" href="/W6_TicketsBookingSite/assets/main-3615a683.css">
   </head>
   <body>
     <!-- <h1 class="header">我是 header</h1> -->
@@ -67,21 +78,21 @@
     </div>
   </div>
  
-  <ul class="row gx-2 gx-md-7 list-unstyled fs-8 md-fs-5 noto-tc-serif catagory mb-8 mb-sm-11">
+  <ul class="row gx-2 gx-md-7 list-unstyled fs-8 md-fs-5 noto-tc-serif catagory mb-8 mb-sm-11 fs-md-5">
     <li class="col-4 col-md-2 mb-2"><a class="d-block border border-2 border-primary py-6 py-md-8" href=""><img class="cata-icon d-block mx-auto" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate01.svg" alt="music icon"><p class="text-center pt-3">演出</p></a></li>
     <li class="col-4 col-md-2 mb-2"><a class="d-block border border-2 border-primary py-6 py-md-8" href=""><img class="cata-icon d-block mx-auto" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate02.svg" alt="music icon"><p  class="text-center pt-3">聯誼</p></a></li>
     <li class="col-4 col-md-2 mb-2"><a class="d-block border border-2 border-primary py-6 py-md-8" href=""><img class="cata-icon d-block mx-auto" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate03.svg" alt="music icon"><p  class="text-center pt-3">展覽</p></a></li>
     <li class="col-4 col-md-2"><a class="d-block border border-2 border-primary py-6 py-md-8" href=""><img class="cata-icon d-block mx-auto" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate04.svg" alt="music icon"><p  class="text-center pt-3">美食</p></a></li>
     <li class="col-4 col-md-2"><a class="d-block border border-2 border-primary py-6 py-md-8" href=""><img class="cata-icon d-block mx-auto" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate05.svg" alt="music icon"><p  class="text-center pt-3">戶外</p></a></li>
-    <li class="col-4 col-md-2"><a class="d-block border border-2 border-primary py-5 py-md-9 text-center bg-primary" href=""><p class="fs-3 text-secondary lh-sm mb-0 text-nowrap">探索<br>更多</p></a></li>
+    <li class="col-4 col-md-2"><a class="d-block border border-2 border-primary py-7 py-sm-5 py-md-7 text-center bg-primary" href=""><p class="fs-5 fs-sm-4 fs-lg-3 text-secondary  mb-0 text-nowrap">探索<br>更多</p></a></li>
   </ul>
 
   <div class="title d-flex justify-content-between align-items-center border border-primary border-3 px-5 md-px-8 py-3 md-py-7 mb-7 md-mb-8">
-    <p class="fs-1">RECENT</p>
-    <p class="fs-4 noto-tc-serif">近期活動</p>
+    <h1 class="fs-1">RECENT</h1>
+    <h1 class="fs-4 noto-tc-serif">近期活動</h1>
   </div>
-  <div class="row mb-3 recent-activities">
-    <div class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
+  <ul class="row mb-3 recent-activities list-unstyled">
+    <li class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
       <div class="fs-3 title border-bottom border-3 border-primary mb-5 mb-sm-3 text-nowrap">19 MAY 2023</div>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/01.jpg?raw=true" class="card-img-top" alt="scared people" />
       <div class="card-body pt-3 pt-sm-2 pb-0 ps-0 pe-0">
@@ -90,15 +101,15 @@
           你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...
         </p>
         <div class="card-footer bg-transparent d-flex border-top border-bottom border-2 border-primary pt-2 pb-2 pe-0 ps-0 justify-content-between">
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
           <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" class="card-icon" alt="" />
           <a class="mb-0 noto-tc-serif">社群活動</a>
           </div>
           <button class="hover-pseudo border-0 fw-bold bg-transparent" data-bs-toggle="modal" data-bs-target="#memberModal">開賣中<i class="icofont-rounded-double-right"></i></button>
         </div>
       </div>
-    </div>
-    <div class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
+    </li>
+    <li class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
       <div class="fs-3 title border-bottom border-3 border-primary mb-5 mb-sm-3 text-nowrap">23 MAY 2023</div>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/02.jpg?raw=true" class="card-img-top" alt="scared people" />
       <div class="card-body pt-3 pt-sm-2 pb-0 ps-0 pe-0">
@@ -107,15 +118,15 @@
           覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...
         </p>
         <div class="card-footer bg-transparent d-flex border-top border-bottom border-2 border-primary pt-2 pb-2 pe-0 ps-0 justify-content-between">
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
           <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" class="card-icon" alt="" />
           <a class="mb-0 noto-tc-serif">演出</a>
           </div>
-          <button class="hover-pseudo border-0 fw-bold bg-transparent" data-bs-toggle="modal" data-bs-target="#memberModal">檢視活動<i class="icofont-rounded-double-right"></i></button>
+          <button class="hover-pseudo border-0 fw-bold bg-transparent text-nowrap" data-bs-toggle="modal" data-bs-target="#memberModal">檢視活動<i class="icofont-rounded-double-right"></i></button>
         </div>
       </div>
-    </div>
-    <div class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
+    </li>
+    <li class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
       <div class="fs-3 title border-bottom border-3 border-primary mb-5 mb-sm-3 text-nowrap">30 MAY 2023</div>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/03.jpg?raw=true" class="card-img-top" alt="scared people" />
       <div class="card-body pt-3 pt-sm-2 pb-0 ps-0 pe-0">
@@ -124,15 +135,15 @@
           每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
         </p>
         <div class="card-footer bg-transparent d-flex border-top border-bottom border-2 border-primary pt-2 pb-2 pe-0 ps-0 justify-content-between">
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
           <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" class="card-icon" alt="" />
           <a class="mb-0 noto-tc-serif">聯誼</a>
           </div>
           <button class="hover-pseudo border-0 fw-bold bg-transparent" data-bs-toggle="modal" data-bs-target="#memberModal">開賣中<i class="icofont-rounded-double-right"></i></button>
         </div>
       </div>
-    </div>
-    <div class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
+    </li>
+    <li class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
       <div class="fs-3 title border-bottom border-3 border-primary mb-5 mb-sm-3 text-nowrap">12 June 2023</div>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/04.jpg?raw=true" class="card-img-top" alt="scared people" />
       <div class="card-body pt-3 pt-sm-2 pb-0 ps-0 pe-0">
@@ -141,15 +152,15 @@
           還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
         </p>
         <div class="card-footer bg-transparent d-flex border-top border-bottom border-2 border-primary pt-2 pb-2 pe-0 ps-0 justify-content-between">
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
           <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" class="card-icon" alt="" />
           <a class="mb-0 noto-tc-serif">遊戲競賽</a>
           </div>
           <button class="hover-pseudo border-0 fw-bold bg-transparent" data-bs-toggle="modal" data-bs-target="#memberModal">開賣中<i class="icofont-rounded-double-right"></i></button>
         </div>
       </div>
-    </div>
-    <div class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
+    </li>
+    <li class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
       <div class="fs-3 title border-bottom border-3 border-primary mb-5 mb-sm-3 text-nowrap">25 June 2023</div>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/05.jpg?raw=true" class="card-img-top" alt="scared people" />
       <div class="card-body pt-3 pt-sm-2 pb-0 ps-0 pe-0">
@@ -158,15 +169,15 @@
           身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
         </p>
         <div class="card-footer bg-transparent d-flex border-top border-bottom border-2 border-primary pt-2 pb-2 pe-0 ps-0 justify-content-between">
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
           <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" class="card-icon" alt="" />
           <a class="mb-0 noto-tc-serif">社群活動</a>
           </div>
           <button class="hover-pseudo border-0 fw-bold bg-transparent" data-bs-toggle="modal" data-bs-target="#memberModal">開賣中<i class="icofont-rounded-double-right"></i></button>
         </div>
       </div>
-    </div>
-    <div class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
+    </li>
+    <li class="card border-0 col-12 col-md-6 col-lg-4 bg-transparent mb-7 mb-md-11">
       <div class="fs-3 title border-bottom border-3 border-primary mb-5 mb-sm-3 text-nowrap">9 July 2023</div>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/06.jpg?raw=true" class="card-img-top" alt="scared people" />
       <div class="card-body pt-3 pt-sm-2 pb-0 ps-0 pe-0">
@@ -175,28 +186,28 @@
           每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。
         </p>
         <div class="card-footer bg-transparent d-flex border-top border-bottom border-2 border-primary pt-2 pb-2 pe-0 ps-0 justify-content-between">
-          <div class="d-flex">
+          <div class="d-flex align-items-center">
           <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" class="card-icon" alt="" />
           <a class="mb-0 noto-tc-serif">展覽</a>
           </div>
           <button class="hover-pseudo border-0 fw-bold bg-transparent" data-bs-toggle="modal" data-bs-target="#memberModal">開賣中<i class="icofont-rounded-double-right"></i></button>
         </div>
       </div>
-    </div>
-  </div>
+    </li>
+  </ul>
   <div class="title d-flex justify-content-between align-items-center border border-primary border-3 px-5 md-px-8 py-3 md-py-7 mb-7 md-mb-8">
-    <p class="fs-1">ONLINE</p>
-    <p class="fs-4 noto-tc-serif">線上活動</p>
+    <h1 class="fs-1">ONLINE</h1>
+    <h1 class="fs-4 noto-tc-serif">線上活動</h1>
   </div>
   <div class="chatgpt row mb-8 mb-md-12">
     <img class="chatgpt-img col-12 col-md-7 mb-3 mb-md-0" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true" alt="">
     <div class="col-12 col-md-5 d-flex flex-column">
       <p class="mb-2 mb-md-5 fs-4 fw-bold noto-tc-serif">切特居批踢</p>
-      <div class="d-flex mb-3 mb-md-8 fs-9 noto-tc-serif">
-        <a class="tag d-block border border-1 border-primary py-1 pe-7 me-2"><span class="" href="#">競賽</span></a>
-        <a class="tag d-block border border-1 border-primary py-1 pe-7 me-2" href="#"><span class="">科技</span></a>
-        <a class="tag d-block border border-1 border-primary py-1 pe-7" href="#"><span class="">有趣</span></a>
-      </div>
+      <ul class="d-flex mb-3 mb-md-8 fs-9 noto-tc-serif list-unstyled">
+        <li><a class="tag d-block border border-1 border-primary py-1 pe-7 me-2"><span class="" href="#">競賽</span></a></li>
+        <li><a class="tag d-block border border-1 border-primary py-1 pe-7 me-2" href="#"><span class="">科技</span></a></li>
+        <li><a class="tag d-block border border-1 border-primary py-1 pe-7" href="#"><span class="">有趣</span></a></li>
+      </ul>
       <p class="mb-3 mb-md-8 noto-tc-sans">最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
         這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
         該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
@@ -320,8 +331,8 @@
 
 </div>
 <div class="quote py-11 py-md-12 text-center noto-tc-serif border-top border-3 border-primary">
-  <p class="fs-4 mb-3 mb-md-5">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-  <p class="fs-7">——我也不知道誰說的</p>
+  <p class="fs-7 fs-md-4 mb-3 mb-md-5">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+  <p class="fs-9 fs-md-7">——我也不知道誰說的</p>
 </div>
 
 
